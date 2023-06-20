@@ -1,0 +1,127 @@
+html::before::after {
+    box-sizing: border-box;
+    font-family: helvetica, 'Courier New', Courier, monospace;
+}
+* {
+    outline: 1px red solid;
+}
+
+.banner-cont {
+    height: 100vh;
+    background: url(./assets/banner.jpg);
+    background-size: cover;
+}
+
+article {
+    margin: 0 20%;
+}
+
+.header {
+    font-size: 2rem;
+    column-count: 2;
+    column-rule: 2px solid red;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#front-white-img {
+    float: right;
+    clip-path: polygon(
+        43% 30%,
+        78% 29%,
+        100% 42%,
+        98% 66%,
+        63% 80%,
+        0 70%,
+        4% 47%,
+        31% 38%
+    );
+    shape-outside: polygon(
+        43% 30%,
+        78% 29%,
+        100% 42%,
+        98% 66%,
+        63% 80%,
+        0 70%,
+        4% 47%,
+        31% 38%
+    );
+    shape-margin: 1rem;
+}
+
+#front-aes-img {
+    float: left;
+    clip-path: polygon(
+        33% 26%,
+        60% 26%,
+        70% 40%,
+        85% 40%,
+        94% 65%,
+        86% 86%,
+        15% 86%,
+        6% 63%,
+        9% 48%
+    );
+    shape-outside: polygon(
+        33% 26%,
+        60% 26%,
+        70% 40%,
+        85% 40%,
+        94% 65%,
+        86% 86%,
+        15% 86%,
+        6% 63%,
+        9% 48%
+    );
+    shape-margin: 0.5rem;
+}
+
+#front-img {
+    float: right;
+    clip-path: polygon(35% 23%, 63% 23%, 83% 46%, 83% 90%, 15% 90%, 15% 46%);
+    shape-outside: polygon(
+        35% 23%,
+        63% 23%,
+        83% 46%,
+        83% 90%,
+        15% 90%,
+        15% 46%
+    );
+    shape-margin: 0.5rem;
+}
+
+#side-img {
+    float: left;
+    clip-path: polygon(43% 24%, 65% 24%, 100% 40%, 97% 80%, 5% 80%, 0% 50%);
+    shape-outside: polygon(43% 24%, 65% 24%, 100% 40%, 97% 80%, 5% 80%, 0% 50%);
+    shape-margin: 0.5rem;
+}
+
+#back-img {
+    float: left;
+    clip-path: polygon(
+        35% 23%,
+        65% 23%,
+        78% 37%,
+        95% 40%,
+        100% 60%,
+        94% 82%,
+        13% 82%,
+        0% 60%,
+        5% 40%
+    );
+    shape-outside: polygon(
+        35% 23%,
+        65% 23%,
+        78% 37%,
+        95% 40%,
+        100% 60%,
+        94% 82%,
+        13% 82%,
+        0% 60%,
+        5% 40%
+    );
+    shape-margin: 0.5rem;
+}
