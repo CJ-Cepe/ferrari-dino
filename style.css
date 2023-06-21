@@ -2,8 +2,9 @@ html::before::after {
     box-sizing: border-box;
     font-family: helvetica, 'Courier New', Courier, monospace;
 }
+
 * {
-    outline: 1px red solid;
+    /*  outline: 1px red solid; */
 }
 
 .banner-cont {
@@ -24,10 +25,15 @@ article {
 
 p {
     font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #front-white-img {
     float: right;
+    margin-top: 5rem;
+    width: 20rem;
     clip-path: polygon(
         43% 30%,
         78% 29%,
@@ -39,15 +45,16 @@ p {
         31% 38%
     );
     shape-outside: polygon(
-        43% 30%,
-        78% 29%,
-        100% 42%,
-        98% 66%,
-        63% 80%,
-        0 70%,
-        4% 47%,
-        31% 38%
-    );
+            43% 30%,
+            78% 29%,
+            100% 42%,
+            98% 66%,
+            63% 80%,
+            0 70%,
+            4% 47%,
+            31% 38%
+        )
+        border-box;
     shape-margin: 1rem;
 }
 
@@ -65,37 +72,58 @@ p {
         9% 48%
     );
     shape-outside: polygon(
-        33% 26%,
-        60% 26%,
-        70% 40%,
-        85% 40%,
-        94% 65%,
-        86% 86%,
-        15% 86%,
-        6% 63%,
-        9% 48%
-    );
+            33% 26%,
+            60% 26%,
+            70% 40%,
+            85% 40%,
+            94% 65%,
+            86% 86%,
+            15% 86%,
+            6% 63%,
+            9% 48%
+        )
+        border-box;
     shape-margin: 0.5rem;
 }
 
 #front-img {
     float: right;
-    clip-path: polygon(35% 23%, 63% 23%, 83% 46%, 83% 90%, 15% 90%, 15% 46%);
-    shape-outside: polygon(
-        35% 23%,
-        63% 23%,
-        83% 46%,
-        83% 90%,
-        15% 90%,
-        15% 46%
+    margin-top: 1.5rem;
+    margin-right: -1em;
+    width: 15rem;
+
+    clip-path: polygon(
+        10% 35%,
+        20% 15%,
+        80% 15%,
+        90% 35%,
+        90% 80%,
+        80% 97%,
+        20% 97%,
+        10% 80%
     );
+
+    shape-outside: polygon(
+            10% 35%,
+            20% 15%,
+            80% 15%,
+            90% 35%,
+            90% 80%,
+            80% 97%,
+            20% 97%,
+            10% 80%
+        )
+        border-box;
     shape-margin: 0.5rem;
 }
 
 #side-img {
-    float: left;
+    float: right;
+    margin-top: 1.4rem;
+    width: 23rem;
     clip-path: polygon(43% 24%, 65% 24%, 100% 40%, 97% 80%, 5% 80%, 0% 50%);
-    shape-outside: polygon(43% 24%, 65% 24%, 100% 40%, 97% 80%, 5% 80%, 0% 50%);
+    shape-outside: polygon(43% 24%, 65% 24%, 100% 40%, 97% 80%, 5% 80%, 0% 50%)
+        border-box;
     shape-margin: 0.5rem;
 }
 
@@ -113,15 +141,16 @@ p {
         5% 40%
     );
     shape-outside: polygon(
-        35% 23%,
-        65% 23%,
-        78% 37%,
-        95% 40%,
-        100% 60%,
-        94% 82%,
-        13% 82%,
-        0% 60%,
-        5% 40%
-    );
+            35% 23%,
+            65% 23%,
+            78% 37%,
+            95% 40%,
+            100% 60%,
+            94% 82%,
+            13% 82%,
+            0% 60%,
+            5% 40%
+        )
+        border-box;
     shape-margin: 0.5rem;
 }
