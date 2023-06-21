@@ -1,10 +1,7 @@
-html::before::after {
-    box-sizing: border-box;
-    font-family: helvetica, 'Courier New', Courier, monospace;
-}
-
 * {
     /*  outline: 1px red solid; */
+    box-sizing: border-box;
+    font-family: helvetica, 'Courier New', Courier, monospace;
 }
 
 .banner-cont {
@@ -25,15 +22,17 @@ article {
 
 p {
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: justify;
-    text-justify: inter-word;
+    text-justify: distribute;
+    text-align-last: left;
+    text-indent: 4rem;
 }
 
 #front-white-img {
     float: right;
-    margin-top: 5rem;
-    width: 20rem;
+    margin-top: 2rem;
+    width: 25rem;
     clip-path: polygon(
         43% 30%,
         78% 29%,
@@ -60,6 +59,9 @@ p {
 
 #front-aes-img {
     float: left;
+    width: 35rem;
+    margin-top: 1rem;
+    margin-left: -2rem;
     clip-path: polygon(
         33% 26%,
         60% 26%,
@@ -86,49 +88,22 @@ p {
     shape-margin: 0.5rem;
 }
 
-#front-img {
-    float: right;
-    margin-top: 1.5rem;
-    margin-right: -1em;
-    width: 15rem;
-
-    clip-path: polygon(
-        10% 35%,
-        20% 15%,
-        80% 15%,
-        90% 35%,
-        90% 80%,
-        80% 97%,
-        20% 97%,
-        10% 80%
-    );
-
-    shape-outside: polygon(
-            10% 35%,
-            20% 15%,
-            80% 15%,
-            90% 35%,
-            90% 80%,
-            80% 97%,
-            20% 97%,
-            10% 80%
-        )
-        border-box;
-    shape-margin: 0.5rem;
-}
-
 #side-img {
     float: right;
-    margin-top: 1.4rem;
-    width: 23rem;
+    margin-top: 1rem;
+    width: 25rem;
     clip-path: polygon(43% 24%, 65% 24%, 100% 40%, 97% 80%, 5% 80%, 0% 50%);
     shape-outside: polygon(43% 24%, 65% 24%, 100% 40%, 97% 80%, 5% 80%, 0% 50%)
         border-box;
     shape-margin: 0.5rem;
+    margin-left: 1rem;
 }
 
 #back-img {
     float: left;
+    width: 25rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
     clip-path: polygon(
         35% 23%,
         65% 23%,
