@@ -8,7 +8,11 @@
     src: url(./assets/CormorantGaramond-Regular.ttf);
 }
 
-* {
+:root {
+    --red: #ed1c24;
+}
+
+html::before::after {
     /* outline: 1px red solid; */
     box-sizing: border-box;
     font-family: 'ProzaLibre Regular', helvetica, 'Courier New', Courier,
@@ -43,7 +47,7 @@
     font-size: 8rem;
     /*     font-style: normal; */
     font-weight: 100;
-    color: red;
+    color: var(--red);
 }
 
 .overlay {
@@ -64,7 +68,7 @@ article {
 .header {
     font-size: 2rem;
     column-count: 2;
-    column-rule: 2px solid red;
+    column-rule: 2px solid var(--red);
 }
 
 p {
@@ -84,7 +88,7 @@ p {
 }
 
 .horizontal-line {
-    border-bottom: 6px red dotted;
+    border-bottom: 6px var(--red) dotted;
     margin-bottom: 6rem;
     width: 30rem;
     margin: 6rem auto 6rem auto;
@@ -218,4 +222,16 @@ p {
         )
         border-box;
     shape-margin: 0.5rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .banner-cont .overlay .the {
+        margin-bottom: -4%;
+        align-self: center;
+        margin-left: 0;
+    }
+
+    #side-img img {
+        float: none;
+    }
 }
